@@ -171,13 +171,14 @@ line-height: 30px;
 /* feature style end */
 /* fact style start */
 .fact{
-    padding: 50px 100px;
+    padding: 80px 100px;
     
 }
 .card-container{
     display: flex;
     justify-content: space-around;
     padding-top: 80px;
+    gap: 30px;
 }
 .card{
     border: 1px solid #FF900E;
@@ -201,8 +202,31 @@ font-size: 20px;
 font-weight: 600;
 }
 /* fact style end */
+/* sponsor style start */
+.sponsor-container{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.sponsor-image{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 100px;
+    align-items: center;
+    gap: 30px;
+}
+/* sponsor style end */
 /* main style end */
-
+/* footer style start */
+.footer{
+        background-color: #FFF4E7;
+        margin: 50px 100px;
+        
+}
+.footer-description{
+    text-align: center;
+    padding: 20px 0px;
+}
+/* footer style end */
 /* responsive */
 /* mobile device */
 @media screen and (max-width:576px) {
@@ -247,14 +271,18 @@ font-weight: 600;
         justify-content: center;
         padding-right: 0px;
     }
-    /* .fact{
-        margin: 0;
-        padding: 20px;
-    } */
     .card-container{
         flex-direction: column;
         gap: 20px;
         padding-top: 40px;
+    }
+    .sponsor-image{
+        flex-direction: column;
+        
+        
+    }
+    .footer{
+        margin: 50px 20px;
     }
 }
 
@@ -298,6 +326,11 @@ font-weight: 600;
         flex-direction: column;
         gap: 20px;
         padding-top: 40px;
+    }
+    .sponsor-image{
+        flex-direction: column;
+        
+        
     }
 
 }
